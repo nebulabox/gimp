@@ -277,11 +277,11 @@ browser_open_url (const gchar  *url,
   NSURL    *ns_url;
   gboolean  retval;
 
-  @autoreleasepool
-    {
-      ns_url = [NSURL URLWithString: [NSString stringWithUTF8String: url]];
-      retval = [[NSWorkspace sharedWorkspace] openURL: ns_url];
-    }
+  // @autoreleasepool
+  //   {
+  //     ns_url = [NSURL URLWithString: [NSString stringWithUTF8String: url]];
+  //     retval = [[NSWorkspace sharedWorkspace] openURL: ns_url];
+  //   }
 
   return retval;
 
